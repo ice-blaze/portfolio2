@@ -1,0 +1,30 @@
+{
+  "editor.formatOnSave": true,
+  "editor.linkedEditing": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.@stylistic": true
+    },
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.@stylistic": true
+    },
+    "editor.formatOnSave": false
+  },
+  "vim.digraphs": {},
+  "[html]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": false
+  },
+  "editor.tabSize": 2,
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ]
+}
