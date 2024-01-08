@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "/",
             "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -36,7 +37,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "https://ice-blaze.github.io/portfolio2",
+              "baseHref": "https://ice-blaze.github.io/portfolio2/",
               "budgets": [
                 {
                   "type": "initial",
