@@ -19,6 +19,19 @@ import {FooterComponent} from "./footer/footer.component"
 	styleUrls: [`./app.component.scss`],
 })
 export class AppComponent {
+	public flag = false
+
+	public ngOnInit(): void {
+		setTimeout(
+			() => {
+				console.log(`hello`)
+
+				this.flag = true
+			},
+			5000,
+		)
+	}
+
 	public hello1(): void {
 		console.log()
 	}

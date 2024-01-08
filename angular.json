@@ -36,6 +36,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "https://ice-blaze.github.io/portfolio2",
               "budgets": [
                 {
                   "type": "initial",
