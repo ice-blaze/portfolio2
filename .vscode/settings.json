@@ -19,12 +19,19 @@
   "vim.digraphs": {},
   "[html]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     },
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "editor.tabSize": 2,
   "security.allowedUNCHosts": [
     "wsl.localhost"
-  ]
+  ],
+  "[javascript][typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.fixAll.@stylistic": "explicit"
+    }
+  }
 }

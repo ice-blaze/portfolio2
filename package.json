@@ -9,7 +9,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:ci": "jest --runInBand",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "postinstall": "husky install"
   },
   "private": true,
   "dependencies": {
@@ -45,15 +46,11 @@
     "jest": "^29.7.0",
     "jest-preset-angular": "^13.1.4",
     "lint-staged": "latest",
+    "prettier": "3.2.2",
     "typescript": "~5.2.2"
   },
   "jest": {
     "preset": "jest-preset-angular",
     "setupTestFrameworkScriptFile": "<rootDir>/setupJest.ts"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
   }
 }
