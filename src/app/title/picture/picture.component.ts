@@ -1,9 +1,10 @@
+import {NgOptimizedImage} from '@angular/common'
 import {Component} from '@angular/core'
 
 @Component({
 	selector: `app-picture`,
 	standalone: true,
-	imports: [],
+	imports: [NgOptimizedImage],
 	templateUrl: `./picture.component.html`,
 	styleUrl: `./picture.component.scss`,
 })
