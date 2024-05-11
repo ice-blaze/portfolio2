@@ -1,6 +1,48 @@
+@use "../../../colors.scss" as colors;
+
+:host {
+  padding: 2rem;
+}
+
+@mixin size {
+  $size: 50vw;
+  $minSize: 130px;
+  $maxSize: 400px;
+  width: $size;
+  height: $size;
+  min-width: $minSize;
+  max-width: $maxSize;
+  min-height: $minSize;
+  max-height: $maxSize;
+  border-radius: 50%;
+}
+
+.container {
+  @include size();
+}
+
 img {
-  width: 50vw;
-  min-width: 130px;
-  max-width: 600px;
-  height: auto;
+  @include size();
+}
+
+.pattern {
+  @include size();
+  position: fixed;
+  z-index: -1;
+  background-image: url("../../../assets/pattern/pattern.svg");
+  animation: z-axis-animation 80s infinite linear;
+}
+
+@mixin scaleAndRotate($deg) {
+  transform: scale(1.1) rotate($deg);
+}
+
+@keyframes z-axis-animation {
+  from {
+    @include scaleAndRotate(0deg);
+  }
+
+  to {
+    @include scaleAndRotate(360deg);
+  }
 }

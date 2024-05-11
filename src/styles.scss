@@ -1,6 +1,9 @@
+@use "./colors.scss" as colors;
+
 @font-face {
   font-family: "League Spartan";
-  src: url("assets/fonts/LeagueSpartan-VariableFont_wght.ttf") format("truetype");
+  src: url("assets/fonts/LeagueSpartan-VariableFont_wght.ttf")
+    format("truetype");
 }
 
 @font-face {
@@ -8,10 +11,8 @@
   src: url("assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 
-$main: #5e17eb;
-
 body {
-  background-color: #f1f1f1;
+  background-color: colors.$background;
   font-family: "Montserrat", Verdana, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -21,5 +22,5 @@ body {
 
 h1 {
   font-family: "League Spartan", Verdana, sans-serif;
-  color: $main;
+  color: colors.$main;
 }
