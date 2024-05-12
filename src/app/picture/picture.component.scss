@@ -1,4 +1,4 @@
-@use "../../../colors.scss" as colors;
+@use "../../colors.scss" as colors;
 
 :host {
   padding: 2rem;
@@ -27,9 +27,9 @@ img {
 
 .pattern {
   @include size();
-  position: fixed;
+  position: absolute;
   z-index: -1;
-  background-image: url("../../../assets/pattern/pattern.svg");
+  background-image: url("../../assets/pattern/pattern.svg");
   animation: z-axis-animation 80s infinite linear;
 }
 

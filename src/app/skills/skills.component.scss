@@ -1,0 +1,17 @@
+@use "../../colors.scss" as colors;
+
+:host {
+  max-width: 600px;
+}
+li {
+  padding: 1rem;
+  text-align: justify;
+}
+li::marker {
+  color: colors.$main;
+  content: ">";
+  font-size: large;
+  font-weight: 900;
+  font-family: monospace;
+  font-size: 1.3rem;
+}

@@ -1,14 +1,10 @@
 import {Component} from "@angular/core"
 import {CommonModule} from "@angular/common"
-import {PictureComponent} from "./picture/picture.component"
 
 @Component({
 	selector: `app-title`,
 	standalone: true,
-	imports: [
-		CommonModule,
-		PictureComponent,
-	],
+	imports: [CommonModule],
 	templateUrl: `./title.component.html`,
 	styleUrl: `./title.component.scss`,
 })

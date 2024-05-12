@@ -1,0 +1,12 @@
+@use "../shared/table.scss" as table;
+
+@include table.initialize();
+
+th,
+td {
+  padding: 1rem;
+}
+
+th {
+  max-width: 8rem;
+}

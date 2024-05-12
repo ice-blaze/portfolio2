@@ -20,7 +20,17 @@ body {
   color: #1b1b1b;
 }
 
-h1 {
+h1,
+h2 {
   font-family: "League Spartan", Verdana, sans-serif;
   color: colors.$main;
+  text-align: center;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+a {
+  color: rgb(44, 51, 237);
 }

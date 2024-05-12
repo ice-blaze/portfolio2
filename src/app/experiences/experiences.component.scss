@@ -1,0 +1,23 @@
+@use "../shared/table.scss" as table;
+@include table.initialize();
+
+:host {
+  // todo share it with other places
+  max-width: 800px;
+}
+
+.main-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.details li {
+  list-style: disc;
+}
