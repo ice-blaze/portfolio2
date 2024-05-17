@@ -1,28 +1,35 @@
 @use "../../../colors.scss" as colors;
 
 @mixin filter($distance) {
-  filter: drop-shadow($distance $distance 0px colors.$main);
+	filter: drop-shadow($distance $distance 0px colors.$main);
 }
 
 .card {
-  max-width: 10rem;
-  color: colors.$main;
-  border-radius: 0.4rem;
-  border: solid;
-  border-width: 0.2rem;
-  padding: 1rem;
-  background-color: white;
-  $toto: 0.2s ease;
-  transform: translate(0px, 0px);
-  transition:
-    transform 100ms linear,
-    filter 100ms linear;
-  @include filter(10px);
+	max-width: 10rem;
+	color: colors.$main;
+	border-radius: 0.4rem;
+	border: solid;
+	border-width: 0.2rem;
+	padding: 1rem;
+	background-color: white;
+	transform: translate(0px, 0px);
+	transition:
+		transform 100ms linear,
+		filter 100ms linear;
+	@include filter(10px);
+}
+
+a{
+  text-decoration: none;
 }
 
 .card:hover,
 .card:focus,
 .card:active {
-  transform: translate(-5px, -5px);
-  @include filter(15px);
+	transform: translate(-5px, -5px);
+	@include filter(15px);
+}
+
+.text{
+	color:black;
 }

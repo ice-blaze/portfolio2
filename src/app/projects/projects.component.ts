@@ -1,5 +1,8 @@
-import {Component} from '@angular/core'
-import {CardComponent} from './card/card.component'
+import {Component} from "@angular/core"
+import {
+	Card,
+	CardComponent,
+} from "./card/card.component"
 
 @Component({
 	selector: `app-projects`,
@@ -8,5 +11,17 @@ import {CardComponent} from './card/card.component'
 	templateUrl: `./projects.component.html`,
 	styleUrl: `./projects.component.scss`,
 })
-// eslint-disable-next-line @typescript-eslint/no-extraneous-class
-export class ProjectsComponent { }
+export class ProjectsComponent {
+	public projects: Card[] = [
+		{
+			image: ``,
+			url: `#1`,
+			text: `hello`,
+		},
+		{
+			image: ``,
+			url: `#2`,
+			text: `hello2`,
+		},
+	]
+}

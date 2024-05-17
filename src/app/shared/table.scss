@@ -1,17 +1,17 @@
 @mixin initialize {
-  // tr:not(:last-child) {
-  tr {
-    border-top: 1px solid #aaaa;
-    border-bottom: 1px solid #aaaa;
-  }
+	// tr:not(:last-child) {
+	tr {
+		border-top: 1px solid #aaaa;
+		border-bottom: 1px solid #aaaa;
+	}
 
-  table {
-    text-align: left;
-    border-collapse: collapse;
-    max-width: 500px;
-  }
+	table {
+		text-align: left;
+		border-collapse: collapse;
+		max-width: 500px;
+	}
 
-  caption {
-    visibility: hidden;
-  }
+	caption {
+		visibility: hidden;
+	}
 }

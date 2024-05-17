@@ -6,8 +6,8 @@ The goal of this project is to have a CV website.
 
 ## Stack
 
-* Angular 17
-* Github Actions
+- Angular 17
+- Github Actions
 
 ## CI/CD
 

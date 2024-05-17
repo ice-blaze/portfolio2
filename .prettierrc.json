@@ -1,0 +1,14 @@
+{
+	"tabWidth": 2,
+	"useTabs": true,
+	"singleQuote": false,
+	"semi": false,
+	"overrides": [
+		{
+			"files": "*.html",
+			"options": {
+				"parser": "angular"
+			}
+		}
+	]
+}

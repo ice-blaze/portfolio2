@@ -1,11 +1,25 @@
-import {Component} from '@angular/core'
+import {
+	Component,
+	Input,
+} from "@angular/core"
+
+export interface Card {
+	text: string;
+	image: string;
+	url: string;
+}
 
 @Component({
 	selector: `app-card`,
 	standalone: true,
-	imports: [],
 	templateUrl: `./card.component.html`,
 	styleUrl: `./card.component.scss`,
 })
-// eslint-disable-next-line @typescript-eslint/no-extraneous-class
-export class CardComponent { }
+export class CardComponent {
+	@Input({required: true})
+	public text = ``
+	@Input({required: true})
+	public image = ``
+	@Input({required: true})
+	public url = ``
+}

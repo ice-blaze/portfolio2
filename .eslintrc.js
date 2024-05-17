@@ -187,7 +187,7 @@ module.exports = {
 	}, {
 		files: [`*.html`],
 		extends: [`plugin:@angular-eslint/template/recommended`, `plugin:@angular-eslint/template/accessibility`],
-		rules: {},
+		// rules: {},
 	}],
 	env: {node: true,es6:true},
 }
@@ -323,3 +323,7 @@ var rules ={
 			"object-shorthand": [`error`, `consistent`],
 			/* eslint-disable sort-keys */
 };
+
+
+// TODO tabs instead of spaces in scss/html files
+// In the overall check scss/html/json/js files to be covered by stylistic
