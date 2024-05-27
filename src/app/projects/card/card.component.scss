@@ -4,8 +4,20 @@
 	filter: drop-shadow($distance $distance 0px colors.$main);
 }
 
+img{
+	height: 3rem;
+}
+
+.center{
+	text-align: center;
+	overflow: hidden;
+}
+
+.large{
+	height: 6rem !important;
+}
+
 .card {
-	max-width: 10rem;
 	color: colors.$main;
 	border-radius: 0.4rem;
 	border: solid;
@@ -18,6 +30,19 @@
 		filter 100ms linear;
 	@include filter(10px);
 }
+// Possible tooltip solution
+// [data-tooltip]:hover::after,
+// [data-tooltip]:focus::after
+//  {
+// 	color: black;
+//   display: block;
+//   position: absolute;
+//   content: attr(data-tooltip);
+//   border: 1px solid black;
+//   background: #eee;
+//   padding: .25em;
+// 	z-index: 99999;
+// }
 
 a{
   text-decoration: none;

@@ -8,6 +8,7 @@ Feel free to visit my GitHub profile to see more projects:
 	@for (project of projects; track $index) {
 		<app-card
 			[image]="project.image"
+			[large]="project.imageLarge"
 			[text]="project.text"
 			[url]="project.url"
 		/>

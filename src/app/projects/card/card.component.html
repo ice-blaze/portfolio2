@@ -1,7 +1,8 @@
-<a [href]="url">
+<a [href]="url" [attr.data-tooltip]="text">
 	<div class="card">
-		<!-- <div>{{image}}</div> -->
-		<!-- <div>title</div> -->
+		<div class="center">
+			<img [class.large]="large" [src]="image" alt="" aria-hidden="true" />
+		</div>
 		<div class="text">{{ text }}</div>
 	</div>
 </a>

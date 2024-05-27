@@ -6,6 +6,7 @@ import {
 export interface Card {
 	text: string;
 	image: string;
+	imageLarge: boolean;
 	url: string;
 }
 
@@ -22,4 +23,6 @@ export class CardComponent {
 	public image = ``
 	@Input({required: true})
 	public url = ``
+	@Input({required: true})
+	public large = false
 }
