@@ -30,7 +30,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "https://ice-blaze.github.io/portfolio2/",
+              "baseHref": "https://etiennefrank.com/",
               "budgets": [
                 {
                   "type": "initial",
