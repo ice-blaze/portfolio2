@@ -1,11 +1,16 @@
-@use "../../../colors.scss" as colors;
+@use "../../../variables.scss" as variables;
 
 @mixin filter($distance) {
-	filter: drop-shadow($distance $distance 0px colors.$main);
+	filter: drop-shadow($distance $distance 0px variables.$mainColor);
 }
 
-img{
+.image{
 	height: 3rem;
+	background-size:contain;
+	background-position: center;
+  background-repeat: no-repeat;
+	width: 100%;
+
 }
 
 .center{
@@ -18,7 +23,7 @@ img{
 }
 
 .card {
-	color: colors.$main;
+	color: variables.$mainColor;
 	border-radius: 0.4rem;
 	border: solid;
 	border-width: 0.2rem;
@@ -46,6 +51,8 @@ img{
 
 a{
   text-decoration: none;
+	display: flex;
+	height: 100%;
 }
 
 .card:hover,
@@ -57,4 +64,5 @@ a{
 
 .text{
 	color:black;
+	line-height: 1.3;
 }

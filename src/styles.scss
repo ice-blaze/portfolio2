@@ -1,4 +1,4 @@
-@use "./colors.scss" as colors;
+@use "./variables.scss" as variables;
 
 @font-face {
   font-family: "League Spartan";
@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: colors.$background;
+  background-color: variables.$backgroundColor;
   font-family: "Montserrat", Verdana, sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -23,7 +23,7 @@ body {
 h1,
 h2 {
   font-family: "League Spartan", Verdana, sans-serif;
-  color: colors.$main;
+  color: variables.$mainColor;
   text-align: center;
 }
 
@@ -33,4 +33,8 @@ h2 {
 
 a {
   color: rgb(44, 51, 237);
+}
+
+p,li {
+  line-height: 1.5;
 }

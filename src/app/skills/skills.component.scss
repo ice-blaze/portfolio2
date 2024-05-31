@@ -1,4 +1,4 @@
-@use "../../colors.scss" as colors;
+@use "../../variables.scss" as variables;
 
 :host {
 	max-width: 600px;
@@ -8,7 +8,7 @@ li {
 	text-align: justify;
 }
 li::marker {
-	color: colors.$main;
+	color: variables.$mainColor;
 	content: ">";
 	font-size: large;
 	font-weight: 900;

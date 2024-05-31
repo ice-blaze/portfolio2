@@ -19,7 +19,8 @@ export class ProjectsComponent {
 			url: `https://github.com/angular/angular/pulls?q=author%3Aice-blaze`,
 			text: `
 			I contributed to Angular's documentation to unify it and ensure it aligns with Google's JavaScript
-			code guidelines.
+			code guidelines.Homogeneity is a nice-to-have and a goal to aim for when you have many contributors 
+			on a project.
 			`,
 		},
 		{
@@ -60,5 +61,13 @@ export class ProjectsComponent {
 			components and helped create the library's first web component.
 			`,
 		},
+		// TODO previous portfolio
+		// {
+		// image: `./assets/projects/.jpg`,
+		// imageLarge: true,
+		// url: `https://ice-blaze.github.io/Portfolio/`,
+		// text: `
+		// `,
+		// },
 	]
 }
