@@ -1,22 +1,33 @@
-import {Component} from "@angular/core"
+import {ChangeDetectionStrategy, Component} from "@angular/core"
 import {CommonModule} from "@angular/common"
-// import {RouterOutlet} from "@angular/router"
-import {TitleComponent} from "./title/title.component"
-import {TimelineComponent} from "./timeline/timeline.component"
-import {PictureComponent} from "./picture/picture.component"
 import {ContactTableComponent} from "./contact-table/contact-table.component"
-import {SkillsComponent} from "./skills/skills.component"
-import {ProjectsComponent} from "./projects/projects.component"
+import {EducationComponent} from "./education/education.component"
 import {ExperiencesComponent} from "./experiences/experiences.component"
 import {LanguagesComponent} from "./languages/languages.component"
-import {EducationComponent} from "./education/education.component"
+import {PictureComponent} from "./picture/picture.component"
+import {ProjectsComponent} from "./projects/projects.component"
+import {SkillsComponent} from "./skills/skills.component"
+import {TimelineComponent} from "./timeline/timeline.component"
+import {TitleComponent} from "./title/title.component"
+
+const toto = (
+	aaa: string,
+	bbb: string,
+): string => {
+	// eslint-disable-next-line no-console
+	console.log(
+		`toto`,
+		aaa,
+		bbb,
+	)
+	const tutu = `${aaa}slkdfj`
+	return `${tutu}sldkjf`
+}
 
 @Component({
-	selector: `app-root`,
-	standalone: true,
+	changeDetection: ChangeDetectionStrategy.OnPush,
 	imports: [
 		CommonModule,
-		// RouterOutlet,
 		TitleComponent,
 		TimelineComponent,
 		PictureComponent,
@@ -27,34 +38,38 @@ import {EducationComponent} from "./education/education.component"
 		LanguagesComponent,
 		EducationComponent,
 	],
-	templateUrl: `./app.component.html`,
+	selector: `app-root`,
+	standalone: true,
 	styleUrls: [`./app.component.scss`],
+	templateUrl: `./app.component.html`,
 })
 export class AppComponent {
+	// Stylistic playground
 	public flag = false
 
-	public hello1(): void {
-		console.log()
+	public hello1 (): void {
+		// eslint-disable-next-line no-console
+		console.log(this.flag)
 	}
 
-	public hello2(
-		a: string,
-
-		b: string, // not double line
-
+	public hello2 (
+		aaa: string,
+		bbb: string,
 	): boolean {
+		// eslint-disable-next-line no-console
 		console.log(
 			`hello`,
-			a,
-			b,
+			aaa,
+			bbb,
+			toto(
+				`sldkjf`,
+				`osdif`,
+			),
 		)
 
-		console.log(
-			`hello`,
-			a,
-			b,
-		)
+		// eslint-disable-next-line no-console
+		console.log(`hello`)
 
-		return true
+		return this.flag
 	}
 }

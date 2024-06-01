@@ -1,20 +1,17 @@
 import {
+	ChangeDetectionStrategy,
 	Component,
 	Input,
 } from "@angular/core"
-
-export interface Card {
-	text: string;
-	image: string;
-	imageLarge: boolean;
-	url: string;
-}
+import {BackgroundImageDirective} from "./background-image.directive"
 
 @Component({
+	changeDetection: ChangeDetectionStrategy.OnPush,
+	imports: [BackgroundImageDirective],
 	selector: `app-card`,
 	standalone: true,
-	templateUrl: `./card.component.html`,
 	styleUrl: `./card.component.scss`,
+	templateUrl: `./card.component.html`,
 })
 export class CardComponent {
 	@Input({required: true})
