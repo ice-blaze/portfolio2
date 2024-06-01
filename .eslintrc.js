@@ -45,6 +45,7 @@ const classMember = {
 	"@stylistic/quote-props": ["error","consistent"], 
 	// Prefered always, because ⬆
 	"@stylistic/js/quote-props": ["error","consistent"],
+	"@stylistic/ts/quote-props": ["error","consistent"],
 
 	/*
 	 * TODO 

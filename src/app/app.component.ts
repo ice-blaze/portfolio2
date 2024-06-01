@@ -40,7 +40,7 @@ const toto = (
 	],
 	selector: `app-root`,
 	standalone: true,
-	styleUrls: [`./app.component.scss`],
+	styleUrl: `./app.component.scss`,
 	templateUrl: `./app.component.html`,
 })
 export class AppComponent {
