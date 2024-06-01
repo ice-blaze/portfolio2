@@ -1,4 +1,9 @@
-import {Directive, ElementRef, Input, inject} from '@angular/core';
+import {
+	Directive,
+	ElementRef,
+	Input,
+	inject,
+} from '@angular/core'
 
 @Directive({
 	selector: `[appBackgroundImage]`,
@@ -9,6 +14,6 @@ export class BackgroundImageDirective {
 
 	@Input()
 	public set appBackgroundImage (value: string) {
-		(this.elementRef.nativeElement as HTMLElement).style.backgroundImage = `url('${value}')`;
+		(this.elementRef.nativeElement as HTMLElement).style.backgroundImage = `url('${value}')`
 	}
 }

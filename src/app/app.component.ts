@@ -1,4 +1,7 @@
-import {ChangeDetectionStrategy, Component} from "@angular/core"
+import {
+	ChangeDetectionStrategy,
+	Component,
+} from "@angular/core"
 import {CommonModule} from "@angular/common"
 import {ContactTableComponent} from "./contact-table/contact-table.component"
 import {EducationComponent} from "./education/education.component"
@@ -55,20 +58,32 @@ export class AppComponent {
 	public hello2 (
 		aaa: string,
 		bbb: string,
+		ccc: string,
 	): boolean {
 		// eslint-disable-next-line no-console
 		console.log(
 			`hello`,
 			aaa,
 			bbb,
+			ccc,
 			toto(
 				`sldkjf`,
 				`osdif`,
 			),
 		)
 
+		const array1 = [`sldkfj`]
+		const array2 = [
+			`slkdf`,
+			`slkdjf`,
+		]
+
 		// eslint-disable-next-line no-console
-		console.log(`hello`)
+		console.log(
+			`hello`,
+			array1,
+			array2,
+		)
 
 		return this.flag
 	}

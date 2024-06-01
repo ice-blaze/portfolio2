@@ -1,6 +1,9 @@
-import {ChangeDetectionStrategy, Component} from "@angular/core"
-import type {Card} from "./card/card.model";
-import {CardComponent} from "./card/card.component";
+import {
+	ChangeDetectionStrategy,
+	Component,
+} from "@angular/core"
+import type {Card} from "./card/card.model"
+import {CardComponent} from "./card/card.component"
 
 @Component({
 	changeDetection: ChangeDetectionStrategy.OnPush,
@@ -61,15 +64,13 @@ export class ProjectsComponent {
 			url: `https://oblique.bit.admin.ch/`,
 		},
 
-		/*
-		 * TODO previous portfolio
-		 * {
-		 * image: `./assets/projects/.jpg`,
-		 * imageLarge: true,
-		 * url: `https://ice-blaze.github.io/Portfolio/`,
-		 * text: `
-		 * `,
-		 * },
-		 */
+		// TODO previous portfolio
+		// {
+		// image: `./assets/projects/.jpg`,
+		// imageLarge: true,
+		// url: `https://ice-blaze.github.io/Portfolio/`,
+		// text: `
+		// `,
+		// },
 	]
 }
