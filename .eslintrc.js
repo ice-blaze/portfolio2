@@ -325,5 +325,4 @@ var rules ={
 };
 
 
-// TODO tabs instead of spaces in scss/html files
-// In the overall check scss/html/json/js files to be covered by stylistic
+// In the overall check json/js files to be covered by stylistic

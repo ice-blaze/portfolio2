@@ -1,40 +1,41 @@
 @use "./variables.scss" as variables;
 
 @font-face {
-  font-family: "League Spartan";
-  src: url("assets/fonts/LeagueSpartan-VariableFont_wght.ttf")
-    format("truetype");
+	font-family: "League Spartan";
+	src: url("assets/fonts/LeagueSpartan-VariableFont_wght.ttf")
+		format("truetype");
 }
 
 @font-face {
-  font-family: "Montserrat";
-  src: url("assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+	font-family: "Montserrat";
+	src: url("assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
 }
 
 body {
-  background-color: variables.$backgroundColor;
-  font-family: "Montserrat", Verdana, sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: #1b1b1b;
+	background-color: variables.$backgroundColor;
+	font-family: "Montserrat", Verdana, sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	color: #1b1b1b;
 }
 
 h1,
 h2 {
-  font-family: "League Spartan", Verdana, sans-serif;
-  color: variables.$mainColor;
-  text-align: center;
+	font-family: "League Spartan", Verdana, sans-serif;
+	color: variables.$mainColor;
+	text-align: center;
 }
 
 .bold {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 a {
-  color: rgb(44, 51, 237);
+	color: rgb(44, 51, 237);
 }
 
-p,li {
-  line-height: 1.5;
+p,
+li {
+	line-height: 1.5;
 }

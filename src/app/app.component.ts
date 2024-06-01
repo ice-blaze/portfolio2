@@ -38,7 +38,6 @@ export class AppComponent {
 	}
 
 	public hello2(
-
 		a: string,
 
 		b: string, // not double line

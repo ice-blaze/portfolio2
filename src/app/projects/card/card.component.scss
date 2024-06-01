@@ -4,21 +4,20 @@
 	filter: drop-shadow($distance $distance 0px variables.$mainColor);
 }
 
-.image{
+.image {
 	height: 3rem;
-	background-size:contain;
+	background-size: contain;
 	background-position: center;
-  background-repeat: no-repeat;
+	background-repeat: no-repeat;
 	width: 100%;
-
 }
 
-.center{
+.center {
 	text-align: center;
 	overflow: hidden;
 }
 
-.large{
+.large {
 	height: 6rem !important;
 }
 
@@ -49,8 +48,8 @@
 // 	z-index: 99999;
 // }
 
-a{
-  text-decoration: none;
+a {
+	text-decoration: none;
 	display: flex;
 	height: 100%;
 }
@@ -62,7 +61,7 @@ a{
 	@include filter(15px);
 }
 
-.text{
-	color:black;
+.text {
+	color: black;
 	line-height: 1.3;
 }
