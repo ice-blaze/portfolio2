@@ -54,7 +54,7 @@ export class ProjectsComponent {
 			url: `https://github.com/ice-blaze/keebord?tab=readme-ov-file`,
 		},
 		{
-			image: `./assets/projects/oblique.jpg`,
+			image: `./assets/projects/oblique.svg`,
 			imageLarge: true,
 			text: `
 			Oblique is the open-source UI framework of the Swiss Government, built with Angular. It generally 
