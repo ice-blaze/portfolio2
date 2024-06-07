@@ -19,7 +19,7 @@ export class ProjectsComponent {
 			image: `./assets/projects/angular.svg`,
 			imageLarge: false,
 			text: `
-			I contributed to Angular's documentation to unify it and ensure it aligns with Google's JavaScript
+			I contributed to <span class="title">Angular</span>'s documentation to unify it and ensure it aligns with Google's JavaScript
 			code guidelines.Homogeneity is a nice-to-have and a goal to aim for when you have many contributors 
 			on a project.
 			`,
@@ -29,7 +29,7 @@ export class ProjectsComponent {
 			image: `./assets/projects/eslint.svg`,
 			imageLarge: false,
 			text: `
-			ESLint made a significant change in their philosophy by moving style-related rules to a new library 
+			<span class="title">ESLint</span> made a significant change in their philosophy by moving style-related rules to a new library 
 			called ESLint Stylistic. The deprecation notice only redirected users to the ESLint Stylistic homepage.
 			I updated the documentation to redirect to the specific rule instead.
 			`,
@@ -39,7 +39,7 @@ export class ProjectsComponent {
 			image: `./assets/projects/webnuggets.svg`,
 			imageLarge: true,
 			text: `
-			Webnugget is a personal microblogging website where I store links I don't want to forget. It's better to 
+			<span class="title">Webnugget</span> is a personal microblogging website where I store links I don't want to forget. It's better to 
 			write them down than to repeat past mistakes. The site is built with Angular and hosted on GitHub Pages.
 			`,
 			url: `https://ice-blaze.github.io/webnuggets/`,
@@ -48,7 +48,7 @@ export class ProjectsComponent {
 			image: `./assets/projects/keebord.jpg`,
 			imageLarge: true,
 			text: `
-			Keebord is a project that analyzes your GitHub repositories and creates a keyboard layout with optimal 
+			<span class="title">Keebord</span> is a project that analyzes your GitHub repositories and creates a keyboard layout with optimal 
 			key positions. It's a toy project built with Vue.js@2 and Express@4.
 			`,
 			url: `https://github.com/ice-blaze/keebord?tab=readme-ov-file`,
@@ -57,7 +57,7 @@ export class ProjectsComponent {
 			image: `./assets/projects/oblique.svg`,
 			imageLarge: true,
 			text: `
-			Oblique is the open-source UI framework of the Swiss Government, built with Angular. It generally 
+			<span class="title">Oblique</span> is the open-source UI framework of the Swiss Government, built with Angular. It generally 
 			overrides Material styles and includes some unique components. I contributed by integrating several 
 			components and helped create the library's first web component.
 			`,
