@@ -1,6 +1,7 @@
 ul {
 	list-style-type: none;
 }
-li {
-	padding: 1rem 0;
+
+li:not(:last-child) {
+	padding-bottom: 1rem;
 }

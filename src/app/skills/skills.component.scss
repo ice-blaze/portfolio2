@@ -4,8 +4,8 @@
 	max-width: 600px;
 }
 
-li {
-	padding: 1rem;
+li:not(:last-child) {
+	padding-bottom: 1rem;
 }
 
 li::marker {
