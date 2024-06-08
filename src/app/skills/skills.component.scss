@@ -10,11 +10,11 @@ li:not(:last-child) {
 
 li {
 	padding-left: 1rem;
+	list-style-type: ">";
 }
 
 li::marker {
 	color: variables.$mainColor;
-	content: ">";
 	font-size: large;
 	font-weight: 900;
 	font-family: monospace;
