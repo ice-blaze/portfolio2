@@ -5,7 +5,7 @@
 @mixin size {
 	$size: 50vw;
 	$minSize: 130px;
-	$maxSize: 400px;
+	$maxSize: 450px;
 	width: $size;
 	height: $size;
 	min-width: $minSize;
@@ -25,14 +25,18 @@ img {
 
 .pattern {
 	@include size();
+	overflow: hidden;
 	position: absolute;
 	z-index: -1;
-	background-image: url("../../assets/pattern/pattern.svg");
 	animation: z-axis-animation 80s infinite linear;
 }
 
+#portrait {
+	transform: scale(0.9);
+}
+
 @mixin scaleAndRotate($deg) {
-	transform: scale(1.1) rotate($deg);
+	transform: rotate($deg);
 }
 
 @keyframes z-axis-animation {

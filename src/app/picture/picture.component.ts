@@ -3,10 +3,14 @@ import {
 	Component,
 } from '@angular/core'
 import {NgOptimizedImage} from '@angular/common'
+import {PatternComponent} from './pattern.component'
 
 @Component({
 	changeDetection: ChangeDetectionStrategy.OnPush,
-	imports: [NgOptimizedImage],
+	imports: [
+		NgOptimizedImage,
+		PatternComponent,
+	],
 	selector: `app-picture`,
 	standalone: true,
 	styleUrl: `./picture.component.scss`,
